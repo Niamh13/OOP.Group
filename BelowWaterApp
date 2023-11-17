@@ -14,14 +14,7 @@ import javax.swing.JOptionPane;
 
 public class BelowWaterApp {
     public static void main(String[] args) {
-        BelowWaterUI myUI = new BelowWaterUI();
-        
-        String ans;
-        
-        do{
-            myUI.menu();
-            ans = JOptionPane.showInputDialog(null, "Would you like to return to the menu? Yes/No");
-        }
-        while(ans.equalsIgnoreCase("yes"));
+        BelowWaterGUI myGUI = new BelowWaterGUI();
+        myGUI.setVisible(true);
     }
 }
